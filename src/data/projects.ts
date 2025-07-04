@@ -55,7 +55,7 @@ export interface ProjectData {
       title: "Reinforcement Learning for Urban Driving",
       subtitle: "Autonomous Navigation in Highway, Parking, and Roundabout Scenarios",
       description: "Explores how deep reinforcement learning agents navigate complex traffic environments using DQN, DDPG, and HER. Covers simulation, tuning, and behavior analysis.",
-      icon: "Car",
+      icon: "Milestone",
       gradient: "from-[hsl(var(--brand-lavender))] to-transparent",
       tags: ["Python", "Reinforcement Learning", "DQN", "DDPG", "HER", "Autonomous Driving"],
       detailedDescription: `This project applies deep reinforcement learning to autonomous vehicle navigation in simulated urban driving environments. It focuses on three core scenarios: highways, parking lots, and roundabouts.

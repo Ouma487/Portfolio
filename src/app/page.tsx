@@ -36,11 +36,13 @@ import {
   Factory,
   Leaf,
   BatteryCharging,
+  Milestone,
   Rocket,
   File,
   Briefcase,
   Handshake,
-  School
+  School,
+  Video
 } from 'lucide-react';
 import { projects, ProjectData } from '@/data/projects';
 import ProjectDetail from '@/components/ProjectDetail';
@@ -57,7 +59,8 @@ const iconMap = {
   Leaf: Leaf,
   BatteryCharging: BatteryCharging,
   Rocket: Rocket,
-  School: School
+  School: School,
+  Milestone: Milestone
 };
 
 
@@ -78,6 +81,7 @@ export default function Home() {
 
   
   const introductionRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const industrualprojectsRef = useRef<HTMLDivElement>(null);
   const resumeRef = useRef<HTMLDivElement>(null);
@@ -173,33 +177,31 @@ export default function Home() {
           </div>
         </SidebarHeader>
         <SidebarContent className="p-4">
-          <SidebarMenu>
-            {[
-  { ref: introductionRef, name: 'introduction', label: 'Introduction', icon: Handshake, color: 'hsl(var(--brand-coral))' },
-  { ref: projectsRef, name: 'projects', label: 'Projects', icon: Rocket },
-  { ref: industrualprojectsRef, name: 'industrial projects', label: 'Industrial Projects', icon: Factory },
-  { ref: resumeRef, name: 'resume', label: 'Resume & Documents', icon: File }
-].map(({ ref, name, label, icon: Icon, color }) => (
-  <SidebarMenuItem key={name}>
-    <SidebarMenuButton
-      onClick={() => scrollToSection(ref, name)}
-      className={`w-full justify-start transition-all duration-200 ${
-        activeSection === name 
-          ? 'bg-[#D3ECF1] text-[#004B5A] font-semibold border-r-2 border-[#007A8E]' 
-          : 'hover:bg-slate-100'
-      }`}
-                  disabled={!!selectedProject} // Disable navigation when a project is selected
-                >
-                  {Icon && <Icon
-                      className="mr-2 h-4 w-4"
-                      style={activeSection === name ? { color } : { color: 'hsl(var(--brand-coral))' }}
-                    />
-}
-                  {label}
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            ))}
-          </SidebarMenu>
+        <SidebarMenu>
+  {[
+    { ref: introductionRef, name: 'introduction', label: 'Introduction', icon: Handshake },
+    { ref: experienceRef, name: 'experience', label: 'Experience', icon: Briefcase },
+    { ref: projectsRef, name: 'projects', label: 'Projects', icon: Rocket },
+    { ref: industrualprojectsRef, name: 'industrial projects', label: 'Industrial Projects', icon: Factory },
+    { ref: resumeRef, name: 'resume', label: 'Resume & Documents', icon: File }
+  ].map(({ ref, name, label, icon: Icon }) => (
+    <SidebarMenuItem key={name}>
+      <SidebarMenuButton
+        onClick={() => scrollToSection(ref, name)}
+        className={`w-full justify-start transition-all duration-200 ${
+          activeSection === name 
+            ? 'bg-[#D3ECF1] text-[#004B5A] font-semibold border-r-2 border-[#007A8E]' 
+            : 'hover:bg-slate-100'
+        }`}
+        disabled={!!selectedProject}
+      >
+        {Icon && <Icon className="mr-2 h-4 w-4 text-[hsl(var(--brand-coral))]" />}
+        {label}
+      </SidebarMenuButton>
+    </SidebarMenuItem>
+  ))}
+</SidebarMenu>
+
           
           <div className="mt-8 pt-4 border-t border-slate-200">
             <div className="flex justify-center space-x-3">
@@ -321,7 +323,7 @@ export default function Home() {
     <h2 className="text-3xl font-bold text-slate-800">Experience</h2>
   </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
     {[
       {
         title: "AI Engineer",
@@ -337,7 +339,7 @@ export default function Home() {
         ],
         tags: ["Python", "VertexAI", "GCP", "Pydantic", "LLMs", "AI Agents", "Multimodal RAG", "Image Processing", "Prompt Engineering", "Unit Testing"],
         gradient: "from-[hsl(var(--brand-yellow-pastel))] to-transparent",
-        icon: Rocket
+        icon: Video
       }
       ,
       {
@@ -354,7 +356,7 @@ export default function Home() {
         ],
         tags: ["Python", "Machine Learning", "Data Mining", "NLP", "Computer Vision", "Predictive Maintenance", "Quality Control", "LLM", "RAG", "Data annotation"],
         gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
-        icon: Factory
+        icon: Car
       }
       
     ].map((exp, index) => (
