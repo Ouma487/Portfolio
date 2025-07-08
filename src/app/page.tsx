@@ -590,7 +590,7 @@ export default function Home() {
                 <CardContent>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Button 
-  className="!bg-transparent bg-gradient-to-r from-[hsl(var(--brand-anthracite))] to-transparent text-white shadow hover:shadow-md"
+  className="bg-[hsl(var(--brand-anthracite))] text-white shadow hover:shadow-md hover:brightness-90"
   onClick={() => {
     const link = document.createElement('a');
     link.href = '/resume.pdf';
