@@ -609,7 +609,7 @@ export default function Home() {
                       className="bg-white text-black hover:text-black hover:bg-white shadow hover:shadow-md"
                       asChild
                     >
-                      <a href="mailto:oumaima.chaterconnect@gmail.com">
+                      <a href="mailto:chtr.oumaima@gmail.com">
                         <Mail className="mr-2 h-4 w-4" />
                         Contact Me
                       </a>
