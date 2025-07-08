@@ -21,35 +21,36 @@ export interface ProjectData {
       id: "robot_waste_mission",
       title: "Robot Waste Mission",
       subtitle: "Multi-Agent Coordination for Hazardous Waste Cleanup",
-      description: "Simulated autonomous robots tasked with radioactive waste cleanup in a constrained multi-zone environment. Explored the impact of inter-agent communication on task efficiency, movement, and deadlock resolution.",
+      description: "Simulated autonomous robots tasked with cleaning radioactive waste across multi-zone environments, comparing communication vs non-communication strategies.",
       icon: "Bot",
       gradient: "from-[hsl(var(--brand-olive))] to-transparent",
       tags: ["Python", "Multi-Agent Systems", "Simulation", "Communication Protocols"],
-      detailedDescription: `This project models a hazardous waste cleanup scenario using autonomous robots in a zone-based environment with restricted access due to varying levels of radioactivity. Each robot type is limited to specific zones, requiring careful coordination for efficient task execution. The project explores the impact of agent communication on movement efficiency, conflict resolution, and overall task performance.
-
-      Two main approaches were compared: one with non-communicating agents using randomized search and simple logic, and another with communicating agents capable of sharing state and delegating tasks. The latter incorporated leader-agent structures to centralize decisions and optimize path planning.`,
-            
+      detailedDescription: `This project simulates a hazardous waste cleanup mission using autonomous robots in a zone-based environment with varying radioactivity levels. Robots are restricted by zone, requiring careful multi-agent coordination for waste collection, transformation, and disposal.
+    
+    We implemented two strategies: one with non-communicating agents using random exploration, and another with communicating agents coordinated by leader structures via message-passing. The communication-enhanced model reduced average completion time by 3.5×, resolved deadlocks, and scaled robustly to more agents.
+    
+    Key features include custom agent schedulers, a hierarchical chief system for centralized decision-making, and extensive performance metrics to compare approaches. Visualizations track agent behavior and waste reduction over time, highlighting the efficiency gains from inter-agent communication.`,
       keyFeatures: [
-        "Zone-based simulation with restricted access based on robot type",
-        "Multi-agent coordination strategies with and without communication",
-        "Deadlock handling and task conflict resolution",
-        "Leader-based role assignment for improved efficiency",
-        "Quantitative comparison of agent strategies using simulation metrics",
-        "Visualization of agent behavior and task progress"
+        "Zone-restricted simulation with multiple waste transformation steps",
+        "Leader-agent structures for centralized communication and coordination",
+        "Quantitative metrics showing 3.5× faster completion vs. non-communicating agents",
+        "Deadlock detection and resolution strategies",
+        "Visualization of agent movements and task completion",
+        "Scalable design supporting additional agents and zones"
       ],
-
       technicalDetails: [
-        "Implemented in Python with object-oriented architecture",
-        "Simulation of multi-agent task allocation and navigation",
-        "Message-passing communication protocols between agents",
-        "Performance metrics: steps to completion, conflict frequency, termination success",
-        "Statistical comparison of non-communicating vs. communicating models",
-        "Scalable architecture for extending to more agents and zones"
+        "Python implementation with modular OOP architecture",
+        "Custom scheduler with randomized multi-tier agent activation",
+        "Message-passing protocols for chief-to-agent and inter-chief coordination",
+        "Statistical data collection on steps to completion and message volume",
+        "Mesa framework for interactive grid visualization",
+        "Tested across varying agent counts and waste densities"
       ],
       pdfReport: "/reports/robot_waste_mission_report.pdf",
       codeRepo: "https://github.com/Ouma487/Robot_Mission",
-      images: ["/images/robot_mission/image1.jpg"]
-    },
+      images: ["/gifs/robot_mission.gif"]
+    }
+    ,
     {
       id: "rl_for_urban_driving",
       title: "Reinforcement Learning for Urban Driving",

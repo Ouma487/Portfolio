@@ -165,22 +165,32 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                     </p>
                   ))}
                 </div>
-                 {project.images && project.images.length > 0 && (
-                  <div className="mt-6">
-                    <h3 className="text-lg font-semibold text-slate-700 mb-3">Visuals</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {project.images.map((image, index) => (
-                        <img 
-                          key={index} 
-                          src={image} 
-                          alt={`${project.title} visual ${index + 1}`} 
-                          data-ai-hint="project image"
-                          className="rounded-lg shadow-md object-cover w-full h-auto"
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
+                {project.images && project.images.length > 0 && (
+  <div className="mt-6">
+    <h3 className="text-lg font-semibold text-slate-700 mb-3">Visuals</h3>
+    {project.images.length === 1 ? (
+      <img 
+        src={project.images[0]} 
+        alt={`${project.title} visual`}
+        data-ai-hint="project image"
+        className="rounded-lg shadow-md w-full h-auto object-contain"
+      />
+    ) : (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {project.images.map((image, index) => (
+          <img 
+            key={index} 
+            src={image} 
+            alt={`${project.title} visual ${index + 1}`} 
+            data-ai-hint="project image"
+            className="rounded-lg shadow-md object-cover w-full h-auto"
+          />
+        ))}
+      </div>
+    )}
+  </div>
+)}
+
               </CardContent>
             </Card>
           </div>

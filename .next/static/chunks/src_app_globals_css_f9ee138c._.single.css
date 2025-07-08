@@ -1328,6 +1328,18 @@ body {
   background-color: #ffffffe6;
 }
 
+.bg-\[hsl\(var\(--brand-anth\)\)\] {
+  background-color: hsl(var(--brand-anth));
+}
+
+.bg-\[hsl\(var\(--brand-anthracit\)\)\] {
+  background-color: hsl(var(--brand-anthracit));
+}
+
+.bg-\[hsl\(var\(--brand-anthracite\)\)\] {
+  background-color: hsl(var(--brand-anthracite));
+}
+
 .bg-opacity-20 {
   --tw-bg-opacity: .2;
 }
@@ -1477,6 +1489,10 @@ body {
 
 .fill-current {
   fill: currentColor;
+}
+
+.object-contain {
+  object-fit: contain;
 }
 
 .object-cover {
