@@ -61,7 +61,8 @@ export interface ProjectData {
       tags: ["Python", "Reinforcement Learning", "DQN", "DDPG", "HER", "Autonomous Driving"],
       detailedDescription: `This project applies deep reinforcement learning to autonomous vehicle navigation in simulated urban driving environments. It focuses on three core scenarios: highways, parking lots, and roundabouts.
     
-    The project implements Deep Q-Networks (DQN), Deep Deterministic Policy Gradient (DDPG), and Hindsight Experience Replay (HER) to train agents capable of making safe and effective decisions in complex traffic situations. Performance is evaluated through metrics such as reward progression and task completion, with fine-tuned hyperparameters for optimal learning outcomes.`,
+    The project implements Deep Q-Networks (DQN), Deep Deterministic Policy Gradient (DDPG), and Hindsight Experience Replay (HER) to train agents capable of making safe and effective decisions in complex traffic situations. Performance is evaluated through metrics such as reward progression and task completion, with fine-tuned hyperparameters for optimal learning outcomes. This project allowed me to explore the practical challenges of tuning RL algorithms and observe firsthand how different methods adapt to varied driving tasks.
+`,
       
       keyFeatures: [
         "Multi-environment RL training (highway, parking, roundabout)",
@@ -80,9 +81,12 @@ export interface ProjectData {
         "Simulation environments: highway-env, parking-env, roundabout-env",
         "Evaluation based on episode rewards and policy stability"
       ],
-      pdfReport: "/reports/rl_for_urban_driving_report.pdf",
+      pdfReport: "/reports/Reinforcement_Learning.pdf",
       codeRepo: "https://github.com/Ouma487/HighwayRLExplorer",
-      images: ["/images/rl/DQN.jpg"]
+      images: ["/gifs/highway.gif",
+        "/gifs/parking-env.gif",
+        "/gifs/roundabout-env.gif"
+      ]
     },
       {
         id: "emotion_recognition",
