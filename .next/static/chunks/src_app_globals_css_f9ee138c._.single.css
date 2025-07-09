@@ -1181,6 +1181,10 @@ body {
   border-color: hsl(var(--brand-sand));
 }
 
+.border-\[hsl\(var\(--brand-secondary\)\)\] {
+  border-color: hsl(var(--brand-secondary));
+}
+
 .border-border\/50 {
   border-color: hsl(var(--border) / .5);
 }
@@ -1217,6 +1221,32 @@ body {
 
 .border-transparent {
   border-color: #0000;
+}
+
+.border-\[hsl\(\#fafafa\)\] {
+  border-color: hsl(#fafafa);
+}
+
+.border-\[hsl\(var\(--brand-beige-light\)\)\] {
+  border-color: hsl(var(--brand-beige-light));
+}
+
+.border-\[hsl\(192\,64\%\,80\%\)\] {
+  --tw-border-opacity: 1;
+  border-color: hsl(192 64% 80% / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#fafafa\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 250 250 / var(--tw-border-opacity, 1));
+}
+
+.border-\[hsl\(\)\] {
+  border-color: hsl();
+}
+
+.border-\[hsl\(var\(--brand-primary\)\)\] {
+  border-color: hsl(var(--brand-primary));
 }
 
 .border-l-transparent {
@@ -1330,6 +1360,19 @@ body {
 
 .bg-white\/90 {
   background-color: #ffffffe6;
+}
+
+.bg-\[hsl\(\#fafafa\)\] {
+  background-color: hsl(#fafafa);
+}
+
+.bg-\[hsl\(var\(--brand-beige-light\)\)\] {
+  background-color: hsl(var(--brand-beige-light));
+}
+
+.bg-\[hsl\(192\,64\%\,80\%\)\] {
+  --tw-bg-opacity: 1;
+  background-color: hsl(192 64% 80% / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-20 {
