@@ -225,7 +225,8 @@ export default function Home() {
         </SidebarContent>
       </Sidebar>
       
-      <SidebarInset className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-[#fafafa]">
+      <SidebarInset className="border-r border-slate-200 bg-white/80 backdrop-blur-sm">
+
         <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-200">
           <div className="flex items-center justify-between p-4">
             <SidebarTrigger className="text-slate-600 hover:bg-slate-100" /> 
