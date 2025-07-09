@@ -88,40 +88,45 @@ export interface ProjectData {
         "/gifs/roundabout-env.gif"
       ]
     },
-      {
-        id: "emotion_recognition",
-        title: "Emotion Recognition",
-        subtitle: "Multimodal Emotion Classification with Deep Learning",
-        description: "Built a multimodal emotion recognition system combining facial expressions and voice analysis. Used CNNs for image-based detection and LSTMs for audio-based classification.",
-        icon: "Brain",
-        gradient: "from-[hsl(var(--brand-beige-light))] to-transparent",
-        tags: ["Deep Learning", "CNN", "LSTM", "Computer Vision", "Audio Processing"],
-        detailedDescription: `This project focuses on developing a deep learning system capable of identifying human emotions from both facial expressions and speech signals. It combines convolutional neural networks (CNNs) for image-based emotion detection with long short-term memory networks (LSTMs) for temporal analysis of audio signals.
+    {
+      id: "emotion_recognition",
+      title: "Emotion Recognition",
+      subtitle: "Multimodal Emotion Classification with Deep Learning",
+      description: "Developed a system that recognizes emotions from facial expressions and speech. Used CNNs on images and LSTMs on audio signals, combining them for improved accuracy.",
+      icon: "Brain",
+      gradient: "from-[hsl(var(--brand-beige-light))] to-transparent",
+      tags: ["Deep Learning", "CNN", "LSTM", "Computer Vision", "Audio Processing"],
+      detailedDescription: `This project built a deep learning pipeline for recognizing human emotions using two complementary data sources: facial images and speech audio.
       
-      The system leverages facial features to classify emotions like happiness, sadness, anger, and surprise, while audio input is processed through spectral features and fed to recurrent models for emotion inference. Ensemble learning techniques were used to combine the outputs of both modalities for improved accuracy.`,
-        
-        keyFeatures: [
-          "Multimodal emotion recognition from images and audio",
-          "CNN-based facial emotion classification using FER2013",
-          "LSTM-based speech emotion recognition using MFCCs",
-          "Ensemble fusion of audio and visual predictions",
-          "Preprocessing pipelines for face detection and feature extraction",
-          "Robust performance evaluation with confusion matrices"
-        ],
-        
-        technicalDetails: [
-          "Python-based implementation using TensorFlow and PyTorch",
-          "OpenCV and Dlib for real-time face detection",
-          "MFCC and spectrograms for audio signal representation",
-          "Sequential modeling with LSTM for audio inputs",
-          "Majority voting and weighted averaging for fusion",
-          "Evaluation using accuracy, precision, and recall on test sets"
-        ],
-
+    - For facial emotion recognition, it employed a CNN trained on FER2013 to classify expressions into categories such as happiness, sadness, anger, and surprise. Data augmentation was used to boost generalization.
+    - For speech emotion recognition, it extracted MFCC features from audio clips and trained an LSTM network to classify emotional states over time.
+    - Finally, ensemble learning combined both modalities for robust multimodal predictions.
       
-      pdfReport: "/reports/deep-hedging-options-report.pdf",
-      codeRepo: "https://github.com/bhsyns/deep-hedging-options",
-      liveDemo: "https://deep-hedging-demo.herokuapp.com",
-      images: ["/images/hedging-performance.png", "/images/neural-network-architecture.png"]
+    Evaluation included confusion matrices and accuracy progression to demonstrate improvements from augmentation and sequence modeling.`,
+      
+      keyFeatures: [
+        "Multimodal emotion recognition using both images and audio",
+        "CNN trained on FER2013 for facial expression classification",
+        "LSTM with MFCC inputs for temporal speech analysis",
+        "Data augmentation raised test accuracy from 64% to 86%",
+        "Fusion of visual and audio predictions for stronger results",
+        "Extensive evaluation via confusion matrices and metrics"
+      ],
+      
+      technicalDetails: [
+        "Implemented with TensorFlow and PyTorch",
+        "OpenCV and Dlib for face detection & preprocessing",
+        "Librosa for MFCC extraction from audio signals",
+        "Sequential LSTM networks for time-series classification",
+        "Majority voting ensemble to merge audio-visual outputs",
+        "Tested on FER2013 and speech emotion datasets"
+      ],
+    
+      pdfReport: "/reports/Emotion_recognition_report.pdf",  // Your actual report
+      codeRepo: "https://github.com/Ouma487/Emotion-recognition", // Correct GitHub
+      images: [
+        "/images/face.png"
+      ]
     }
+    
   ];
