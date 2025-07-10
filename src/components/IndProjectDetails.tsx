@@ -114,7 +114,7 @@ export default function IndProjectDetail({ indproject, onBack }: IndProjectDetai
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {indproject.tags.map((tag, index) => (
-                    <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
+                    <Badge key={index} variant="outline" className="text-xs">
                       {tag}
                     </Badge>
                   ))}
@@ -129,7 +129,7 @@ export default function IndProjectDetail({ indproject, onBack }: IndProjectDetai
               <div className="flex flex-col space-y-3 lg:min-w-[200px] pt-2">
                 {indproject.pdfReport && (
                   <Button 
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow hover:shadow-md"
+                    className="bg-[hsl(var(--brand-primary))] hover:brightness-90 text-white shadow hover:shadow-md"
                     onClick={() => window.open(indproject.pdfReport, '_blank')}
                   >
                     <Download className="mr-2 h-4 w-4" />
