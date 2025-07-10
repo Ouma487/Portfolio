@@ -1,6 +1,7 @@
 
 // src/app/page.tsx
 'use client';
+import ExperienceDetail from '@/components/ExperienceDetail';
 
 import { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -78,6 +79,8 @@ export default function Home() {
 
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
   const [selectedIndProject, setSelectedIndProject] = useState<IndProjectData | null>(null);
+  const [selectedExperience, setSelectedExperience] = useState<any | null>(null);
+
 
   
   const introductionRef = useRef<HTMLDivElement>(null);
@@ -152,9 +155,10 @@ export default function Home() {
     );
   }
 
-  const skills = [
-    'Python', 'MATLAB', 'C++', 'Machine Learning','Deep Learning', 'Natural Language Processing', 'Computer Vision', 'SQL','Reinforcement Learning', 'Large Language Models','AI Agents'
-  ];
+  const skills = ['Python', 'MATLAB', 'C++', 'Machine Learning', 'Deep Learning', 'Natural Language Processing',
+    'Computer Vision', 'SQL', 'Reinforcement Learning', 'Large Language Models', 
+    'AI Agents', 'AWS Lambda', 'FastAPI']
+   ;
 
   const achievements = [
     { icon: School , text: "CentraleSupélec", color: "text-[hsl(var(--brand-primary))]" },
@@ -216,7 +220,7 @@ export default function Home() {
                 </a>
               </Button>
               <Button size="sm" variant="ghost" className="p-2" asChild>
-                <a href="mailto:oumaima.chaterconnect@gmail.com">
+                <a href="mailto:chtr.oumaima@gmail.com">
                   <Mail className="h-4 w-4" />
                 </a>
               </Button>
@@ -312,109 +316,141 @@ export default function Home() {
               </Card>
             </section>
 
-
-           {/* Experience Section */}
-<section 
-  className="mb-12" 
-  id="experience"
->
-  <div className="flex items-center space-x-3 mb-6">
-    <div className="p-2 bg-[hsl(var(--brand-secondary))] rounded-lg shadow-sm">
-      <Briefcase className="h-6 w-6 text-[hsl(var(--brand-primary))]" />
-    </div>
-    <h2 className="text-3xl font-bold text-slate-800">Experience</h2>
-  </div>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-    {[
-      {
-        title: "AI Engineer",
-        company: "Libertify",
-        period: "Dec 2024 – Present",
-        location: "Paris, France",
-        description: "Architected advanced AI pipelines for video generation from documents.",
-        details: [
-          "Enhanced RAG system with multimodal components (text + images).",
-          "Built AI agents to create video scripts from newsletters with topic classification & prompt engineering.",
-          "Developed image extraction from PDFs, background removal & automated image generation for video backgrounds.",
-          "Ensured robustness through extensive unit testing, debugging & platform validation."
-        ],
-        tags: ["Python", "VertexAI", "GCP", "Pydantic", "LLMs", "AI Agents", "Multimodal RAG", "Image Processing", "Prompt Engineering", "Unit Testing"],
-        gradient: "from-[hsl(var(--brand-yellow-pastel))] to-transparent",
-        icon: Video
-      }
-      ,
-      {
-        title: "AI & Data Mining Intern",
-        company: "Renault",
-        period: "Apr 2023 – Oct 2023",
-        location: "Paris, France",
-        description: "Optimized automotive manufacturing through predictive quality and document analysis.",
-        details: [
-          "Developed predictive models to detect vehicle defects using DTCs, enhancing quality control.",
-          "Implemented NLP & computer vision pipelines to automate tender document analysis.",
-          "Supported predictive maintenance initiatives with advanced data mining techniques.",
-          "Improved operational efficiency by streamlining procurement and quality processes."
-        ],
-        tags: ["Python", "Machine Learning", "Data Mining", "NLP", "Computer Vision", "Predictive Maintenance", "Quality Control", "LLM", "RAG", "Data annotation"],
-        gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
-        icon: Car
-      }
-      
-    ].map((exp, index) => (
-      <Card 
-  key={index} 
-  className="h-full flex flex-col justify-between group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden"
->
-  {/* Gradient bar on top */}
-  <div className={`h-2 bg-gradient-to-r ${exp.gradient}`} />
-
-  <div className="flex-1 flex flex-col justify-between p-4">
-    {/* Icon */}
-    <div className="flex items-start justify-between mb-3">
-      <div className={`p-3 rounded-lg bg-gradient-to-r ${exp.gradient} bg-opacity-20 shadow-inner`}>
-        <exp.icon className="h-6 w-6 text-slate-700" />
+            {selectedExperience ? (
+  <ExperienceDetail 
+    experience={selectedExperience} 
+    onBack={() => setSelectedExperience(null)}
+  />
+) : (
+  <>
+    {/* Experience Section */}
+    <section className="mb-12" id="experience">
+      <div className="flex items-center space-x-3 mb-6">
+        <div className="p-2 bg-[hsl(var(--brand-secondary))] rounded-lg shadow-sm">
+          <Briefcase className="h-6 w-6 text-[hsl(var(--brand-primary))]" />
+        </div>
+        <h2 className="text-3xl font-bold text-slate-800">Experience</h2>
       </div>
-    </div>
 
-    {/* Title and period */}
-    <div className="mb-2">
-      <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[hsl(var(--brand-primary))] transition-colors">
-        {exp.title} @ {exp.company}
-      </h3>
-      <p className="text-sm text-slate-600 font-medium">
-        {exp.period} · {exp.location}
-      </p>
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        {[
+          {
+            title: "AI Engineer",
+            company: "Libertify",
+            period: "Dec 2024 – Present",
+            location: "Paris, France",
+            description: "Architected advanced AI pipelines for video generation from documents.",
+            details: [
+              "Enhanced the RAG system with multimodal pipelines combining text and visual embeddings to improve retrieval and contextual video generation.",
+              "Built AI agents that classify newsletter content by topic, generate structured video scripts, and ensure prompt consistency for downstream tasks.",
+              "Engineered a dedicated image generation pipeline that uses LLMs to automatically produce tailored prompts from video scripts, generating high-quality images for use as dynamic video backgrounds.",
+              "Developed separate modules for extracting images from PDFs and performing background removal to enrich content assets.",
+              "Established rigorous unit testing, debugging, and validation frameworks to ensure platform robustness and accuracy across all AI pipelines."
+            ],
+            more: {
+              companyIntro: "Libertify is a Paris‑based AI/Fintech startup transforming complex financial & ESG documents into engaging, video‑based narratives. The company has been recognized globally for its innovation, winning the Cyberport Hong Kong Green Fintech Sustainable Scheme (2025), FinTech Awards 2024 by Hong Kong ET Net for AI Finance & News Data Excellence, and was highlighted among 120 startups at BNP Paribas' Innovation & Agile Days 2024 in France. It also secured the top spot in the Global FastTrack Pitching Competition at the Hong Kong Fintech 2023 event.",
+              website: "https://www.linkedin.com/company/libertyfi/posts/?feedView=all"
+            },
+            tags: ["Python",  "GCP", "Pydantic", "LLMs", "AI Agents", "RAG", "Image Processing", "Prompt Engineering", "Unit Testing"],
+            gradient: "from-[hsl(var(--brand-yellow-pastel))] to-transparent",
+            icon: Video
+          },
+          {
+            title: "AI & Data Mining Intern",
+            company: "Renault",
+            period: "Apr 2024 – Oct 2024",
+            location: "Guyancourt, France",
+            description: "Optimized automotive manufacturing through predictive quality and document analysis.",
+            details: [
+              "Developed predictive models to detect vehicle defects using DTCs, enhancing quality control.",
+              "Implemented NLP & computer vision pipelines to automate tender document analysis.",
+              "Supported predictive maintenance initiatives with advanced data mining techniques.",
+              "Improved operational efficiency by streamlining procurement and quality processes."
+            ],
+            more: {
+              companyIntro: "Renault is a global automotive leader headquartered in France, producing millions of vehicles annually across multiple brands. Known for its engineering excellence and innovative quality systems, Renault plays a major role in the European and global automotive markets.",
+              challenges: [
+                "Handling highly imbalanced data for predictive defect detection in vehicle quality pipelines.",
+                "Automating extraction of compliance and technical requirements from complex tender documents.",
+                "Ensuring solutions were scalable and aligned with Renault’s rigorous production and quality standards."
+              ],
+              website: "https://www.renaultgroup.com/en/"
+            },
+            tags: [
+              "Python", "Machine Learning", "Data Mining", "NLP", "Computer Vision",
+              "Predictive Maintenance", "Quality Control", "LLM", "RAG", "Data annotation"
+            ],
+            gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
+            icon: Car
+          }
+          
+        ].map((exp, index) => (
+          <Card
+            key={index}
+            className="h-full flex flex-col justify-between group hover:shadow-2xl transition duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden cursor-pointer"
+            onClick={() => setSelectedExperience(exp)}
+          >
+            {/* Top gradient bar */}
+            <div className={`h-2 bg-gradient-to-r ${exp.gradient}`} />
 
-    {/* Description and details */}
-    <div className="text-slate-700 text-sm leading-relaxed mb-4">
-      <p>{exp.description}</p>
-      {exp.details && (
-        <ul className="list-disc list-inside mt-2 space-y-1">
-          {exp.details.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      )}
-    </div>
+            <div className="flex-1 flex flex-col justify-between p-4">
+              {/* Icon */}
+              <div className="flex items-start justify-between mb-3">
+                <div className={`p-3 rounded-lg bg-gradient-to-r ${exp.gradient} bg-opacity-20 shadow-inner`}>
+                  <exp.icon className="h-6 w-6 text-slate-700" />
+                </div>
+              </div>
 
-    {/* Tags */}
-    <div className="flex flex-wrap gap-1 mt-2">
-      {exp.tags.map((tag, tagIndex) => (
-        <Badge key={tagIndex} variant="outline" className="text-xs">
-          {tag}
-        </Badge>
-      ))}
-    </div>
-  </div>
-</Card>
+              {/* Title and period */}
+              <div className="mb-2">
+                <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[hsl(var(--brand-primary))] transition-colors">
+                  {exp.title} @ {exp.company}
+                </h3>
+                <p className="text-sm text-slate-600 font-medium">
+                  {exp.period} · {exp.location}
+                </p>
+              </div>
+
+              {/* Description and details */}
+              <div className="text-slate-700 text-sm leading-relaxed mb-4">
+                <p>{exp.description}</p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  {exp.details.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-1 mt-2 mb-6">
+  {exp.tags.map((tag, tagIndex) => (
+    <Badge key={tagIndex} variant="outline" className="text-xs">
+      {tag}
+    </Badge>
+  ))}
+</div>
 
 
-    ))}
-  </div>
-</section>
+              {/* View More */}
 
+              <div
+  className="mt-auto w-full py-2 px-4 border border-slate-200 rounded-md text-center text-sm text-slate-600 hover:bg-[hsl(var(--brand-secondary))] hover:border-[hsl(var(--brand-primary))] hover:text-[hsl(var(--brand-primary))] transition-colors flex items-center justify-center cursor-pointer"
+  onClick={(e) => {
+    e.stopPropagation();
+    setSelectedExperience(exp);
+  }}
+>
+  View Details
+  <ExternalLink className="ml-2 h-3 w-3" />
+</div>
+
+            </div>
+          </Card>
+        ))}
+      </div>
+    </section>
+  </>
+)}
 
 
             {/* Projects Section */}
@@ -595,7 +631,7 @@ export default function Home() {
   className="bg-[hsl(var(--brand-anthracite))] text-white shadow hover:shadow-md hover:brightness-90"
   onClick={() => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = '/Chater_CV_Eng (10).pdf';
     link.download = 'Oumaima_Chater_Resume.pdf';
     document.body.appendChild(link);
     link.click();
