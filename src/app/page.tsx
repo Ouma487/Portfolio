@@ -362,10 +362,11 @@ export default function Home() {
             location: "Guyancourt, France",
             description: "Optimized automotive manufacturing through predictive quality and document analysis.",
             details: [
-              "Developed predictive models to detect vehicle defects using DTCs, enhancing quality control.",
-              "Implemented NLP & computer vision pipelines to automate tender document analysis.",
-              "Supported predictive maintenance initiatives with advanced data mining techniques.",
-              "Improved operational efficiency by streamlining procurement and quality processes."
+              "Developed predictive models using AI and data mining to identify vehicle defects from diagnostic trouble codes (DTCs), strengthening quality control in manufacturing.",
+              "Automated tender document analysis with a combined NLP and computer vision pipeline, improving procurement efficiency and compliance checking.",
+              "Supported predictive maintenance initiatives by analyzing sensor data and fault histories to forecast potential failures.",
+              "Contributed to data annotation and validation efforts, ensuring robust training datasets for defect prediction and document parsing tasks.",
+              "Collaborated closely with engineers and procurement specialists to integrate AI solutions into existing Renault workflows, enhancing overall operational efficiency."
             ],
             more: {
               companyIntro: "Renault is a global automotive leader headquartered in France, producing millions of vehicles annually across multiple brands. Known for its engineering excellence and innovative quality systems, Renault plays a major role in the European and global automotive markets.",
