@@ -533,7 +533,7 @@ const projects = [
         subtitle: "Multimodal Emotion Classification with Deep Learning",
         description: "Developed a system that recognizes emotions from facial expressions and speech. Used CNNs on images and LSTMs on audio signals, combining them for improved accuracy.",
         icon: "Brain",
-        gradient: "from-[hsl(var(--brand-beige-light))] to-transparent",
+        gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
         tags: [
             "Deep Learning",
             "CNN",
