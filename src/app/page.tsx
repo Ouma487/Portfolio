@@ -1,7 +1,6 @@
 
 // src/app/page.tsx
 'use client';
-import ExperienceDetail from '@/components/ExperienceDetail';
 
 import { useState, useRef, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -49,6 +48,10 @@ import { projects, ProjectData } from '@/data/projects';
 import ProjectDetail from '@/components/ProjectDetail';
 import IndProjectDetail from '@/components/IndProjectDetails';
 import { indprojects, IndProjectData } from '@/data/industrual_project';
+import { experiences, experiencesData } from '@/data/experiences';
+import ExperienceDetail from '@/components/ExperienceDetails';
+
+import Link from 'next/link';
 
 const iconMap = {
   TrendingUp: TrendingUp,
@@ -61,7 +64,8 @@ const iconMap = {
   BatteryCharging: BatteryCharging,
   Rocket: Rocket,
   School: School,
-  Milestone: Milestone
+  Milestone: Milestone,
+  Video: Video
 };
 
 
@@ -79,14 +83,14 @@ export default function Home() {
 
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
   const [selectedIndProject, setSelectedIndProject] = useState<IndProjectData | null>(null);
-  const [selectedExperience, setSelectedExperience] = useState<any | null>(null);
-
+  const [selectedexperience, setSelectedexperience] = useState<experiencesData | null>(null);
 
   
   const introductionRef = useRef<HTMLDivElement>(null);
-  const experienceRef = useRef<HTMLDivElement>(null);
+
   const projectsRef = useRef<HTMLDivElement>(null);
   const industrualprojectsRef = useRef<HTMLDivElement>(null);
+  const experiencesRef = useRef<HTMLDivElement>(null);
   const resumeRef = useRef<HTMLDivElement>(null);
 
   // Handle hydration
@@ -108,6 +112,7 @@ export default function Home() {
       { ref: introductionRef, name: 'introduction' },
       { ref: projectsRef, name: 'projects' },
       {ref: industrualprojectsRef, name: 'industrual projects'},
+      {ref: experiencesRef, name: 'experiences'},
       { ref: resumeRef, name: 'resume' }
     ];
 
@@ -144,7 +149,14 @@ export default function Home() {
   const handleBackToIndProjects = () => {
     setSelectedIndProject(null);
   };
+
+  const handleexperienceClick = (experience: experiencesData) => {
+    setSelectedexperience(experience);
+  };
   
+  const handleBackToexperience = () => {
+    setSelectedexperience(null);
+  };
 
   // Don't render until hydrated to prevent hydration mismatches
   if (!isMounted) {
@@ -168,7 +180,7 @@ export default function Home() {
 
   return (
     <>
-      <Sidebar className="border-r border-slate-200 bg-white/80 backdrop-blur-sm" collapsible="offcanvas">
+      <Sidebar className="border border-[hsl(var(--brand-primary))] bg-white/80 backdrop-blur-sm rounded-lg shadow-sm">
         <SidebarHeader className="border-b border-slate-200 bg-gradient-to-r from-[hsl(192,100%,28%)] to-[hsl(192,64%,80%)]">
           <div className="p-4">
             <div className="mt-2">
@@ -184,7 +196,7 @@ export default function Home() {
         <SidebarMenu>
   {[
     { ref: introductionRef, name: 'introduction', label: 'Introduction', icon: Handshake },
-    { ref: experienceRef, name: 'experience', label: 'Experience', icon: Briefcase },
+    { ref: experiencesRef, name: 'experiences', label: 'Experiences', icon: Briefcase },
     { ref: projectsRef, name: 'projects', label: 'Projects', icon: Rocket },
     { ref: industrualprojectsRef, name: 'industrial projects', label: 'Industrial Projects', icon: Factory },
     { ref: resumeRef, name: 'resume', label: 'Resume & Documents', icon: File }
@@ -197,7 +209,7 @@ export default function Home() {
             ? 'bg-[#D3ECF1] text-[#004B5A] font-semibold border-r-2 border-[#007A8E]' 
             : 'hover:bg-slate-100'
         }`}
-        disabled={!!selectedProject}
+        disabled={!!selectedProject || !!selectedIndProject|| !!selectedexperience}
       >
         {Icon && <Icon className="mr-2 h-4 w-4 text-[hsl(var(--brand-coral))]" />}
         {label}
@@ -244,6 +256,8 @@ export default function Home() {
     <ProjectDetail project={selectedProject} onBack={handleBackToProjects} />
     ) : selectedIndProject ? (
       <IndProjectDetail indproject={selectedIndProject} onBack={handleBackToIndProjects} />
+    ) : selectedexperience ? (
+      <ExperienceDetail experience={selectedexperience} onBack={handleBackToexperience} />
     ) : (
     <div className="container mx-auto p-6">
             {/* Introduction Section */}
@@ -252,7 +266,7 @@ export default function Home() {
               ref={introductionRef}
               id="introduction"
             >
-              <Card className="border-0 shadow-xl bg-gradient-to-r from-[#fafafa] to-[#fafafa] overflow-hidden">
+              <Card className="shadow-2xl hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] bg-gradient-to-r from-[#fafafa] to-[#fafafa] rounded-xl transition duration-300">
 
                 <CardHeader className="pb-4">
                 <CardTitle className="text-3xl font-bold bg-gradient-to-r from-[#007A8E] to-[#A4D7E1] bg-clip-text text-transparent">
@@ -316,143 +330,85 @@ export default function Home() {
               </Card>
             </section>
 
-            {selectedExperience ? (
-  <ExperienceDetail 
-    experience={selectedExperience} 
-    onBack={() => setSelectedExperience(null)}
-  />
-) : (
-  <>
-    {/* Experience Section */}
-    <section className="mb-12" id="experience">
-      <div className="flex items-center space-x-3 mb-6">
-        <div className="p-2 bg-[hsl(var(--brand-secondary))] rounded-lg shadow-sm">
-          <Briefcase className="h-6 w-6 text-[hsl(var(--brand-primary))]" />
-        </div>
-        <h2 className="text-3xl font-bold text-slate-800">Experience</h2>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-        {[
-          {
-            title: "AI Engineer",
-            company: "Libertify",
-            period: "Dec 2024 – Present",
-            location: "Paris, France",
-            description: "Architected advanced AI pipelines for video generation from documents.",
-            details: [
-              "Enhanced the RAG system with multimodal pipelines combining text and visual embeddings to improve retrieval and contextual video generation.",
-              "Built AI agents that classify newsletter content by topic, generate structured video scripts, and ensure prompt consistency for downstream tasks.",
-              "Engineered a dedicated image generation pipeline that uses LLMs to automatically produce tailored prompts from video scripts, generating high-quality images for use as dynamic video backgrounds.",
-              "Developed separate modules for extracting images from PDFs and performing background removal to enrich content assets.",
-              "Established rigorous unit testing, debugging, and validation frameworks to ensure platform robustness and accuracy across all AI pipelines."
-            ],
-            more: {
-              companyIntro: "Libertify is a Paris‑based AI/Fintech startup transforming complex financial & ESG documents into engaging, video‑based narratives. The company has been recognized globally for its innovation, winning the Cyberport Hong Kong Green Fintech Sustainable Scheme (2025), FinTech Awards 2024 by Hong Kong ET Net for AI Finance & News Data Excellence, and was highlighted among 120 startups at BNP Paribas' Innovation & Agile Days 2024 in France. It also secured the top spot in the Global FastTrack Pitching Competition at the Hong Kong Fintech 2023 event.",
-              website: "https://www.linkedin.com/company/libertyfi/posts/?feedView=all"
-            },
-            tags: ["Python",  "GCP", "Pydantic", "LLMs", "AI Agents", "RAG", "Image Processing", "Prompt Engineering", "Unit Testing"],
-            gradient: "from-[hsl(var(--brand-yellow-pastel))] to-transparent",
-            icon: Video
-          },
-          {
-            title: "AI & Data Mining Intern",
-            company: "Renault",
-            period: "Apr 2024 – Oct 2024",
-            location: "Guyancourt, France",
-            description: "Optimized automotive manufacturing through predictive quality and document analysis.",
-            details: [
-              "Developed predictive models using AI and data mining to identify vehicle defects from diagnostic trouble codes (DTCs), strengthening quality control in manufacturing.",
-              "Automated tender document analysis with a combined NLP and computer vision pipeline, improving procurement efficiency and compliance checking.",
-              "Supported predictive maintenance initiatives by analyzing sensor data and fault histories to forecast potential failures.",
-              "Contributed to data annotation and validation efforts, ensuring robust training datasets for defect prediction and document parsing tasks.",
-              "Collaborated closely with engineers and procurement specialists to integrate AI solutions into existing Renault workflows, enhancing overall operational efficiency."
-            ],
-            more: {
-              companyIntro: "Renault is a global automotive leader headquartered in France, producing millions of vehicles annually across multiple brands. Known for its engineering excellence and innovative quality systems, Renault plays a major role in the European and global automotive markets.",
-              challenges: [
-                "Handling highly imbalanced data for predictive defect detection in vehicle quality pipelines.",
-                "Automating extraction of compliance and technical requirements from complex tender documents.",
-                "Ensuring solutions were scalable and aligned with Renault’s rigorous production and quality standards."
-              ],
-              website: "https://www.renaultgroup.com/en/"
-            },
-            tags: [
-              "Python", "Machine Learning", "Data Mining", "NLP", "Computer Vision",
-              "Predictive Maintenance", "Quality Control", "LLM", "RAG", "Data annotation"
-            ],
-            gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
-            icon: Car
-          }
-          
-        ].map((exp, index) => (
-          <Card
-            key={index}
-            className="h-full flex flex-col justify-between group hover:shadow-2xl transition duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden cursor-pointer"
-            onClick={() => setSelectedExperience(exp)}
-          >
-            {/* Top gradient bar */}
-            <div className={`h-2 bg-gradient-to-r ${exp.gradient}`} />
-
-            <div className="flex-1 flex flex-col justify-between p-4">
-              {/* Icon */}
-              <div className="flex items-start justify-between mb-3">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${exp.gradient} bg-opacity-20 shadow-inner`}>
-                  <exp.icon className="h-6 w-6 text-slate-700" />
-                </div>
-              </div>
-
-              {/* Title and period */}
-              <div className="mb-2">
-                <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[hsl(var(--brand-primary))] transition-colors">
-                  {exp.title} @ {exp.company}
-                </h3>
-                <p className="text-sm text-slate-600 font-medium">
-                  {exp.period} · {exp.location}
-                </p>
-              </div>
-
-              {/* Description and details */}
-              <div className="text-slate-700 text-sm leading-relaxed mb-4">
-                <p>{exp.description}</p>
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  {exp.details.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-1 mt-2 mb-6">
-  {exp.tags.map((tag, tagIndex) => (
-    <Badge key={tagIndex} variant="outline" className="text-xs">
-      {tag}
-    </Badge>
-  ))}
-</div>
-
-
-              {/* View More */}
-
-              <div
-  className="mt-auto w-full py-2 px-4 border border-slate-200 rounded-md text-center text-sm text-slate-600 hover:bg-[hsl(var(--brand-secondary))] hover:border-[hsl(var(--brand-primary))] hover:text-[hsl(var(--brand-primary))] transition-colors flex items-center justify-center cursor-pointer"
-  onClick={(e) => {
-    e.stopPropagation();
-    setSelectedExperience(exp);
-  }}
+            {/*experiences section*/}
+            <section 
+  className="mb-12" 
+  ref={experiencesRef}
+  id="experiences"
 >
-  View Details
-  <ExternalLink className="ml-2 h-3 w-3" />
+  <div className="flex items-center space-x-3 mb-6">
+    <div className="p-2 bg-[hsl(var(--brand-secondary))] rounded-lg shadow-sm">
+      <Briefcase className="h-6 w-6 text-[hsl(var(--brand-primary))]" />
+    </div>
+    <h2 className="text-3xl font-bold text-slate-800">Professional Experience</h2>
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+    {experiences.map((experience, index) => {
+      const IconComponent = iconMap[experience.icon as keyof typeof iconMap] || Code;
+      return (
+        <Card 
+          key={index} 
+          className="h-full flex flex-col justify-between group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden"
+        >
+          <div className={`h-2 bg-gradient-to-r ${experience.gradient}`} />
+
+          <div className="flex-1 flex flex-col justify-between p-4">
+            {/* Icon only (no logo) */}
+<div className="flex items-start justify-between mb-3">
+  <div className={`p-3 rounded-lg bg-gradient-to-r ${experience.gradient} bg-opacity-20 shadow-inner`}>
+    <IconComponent className="h-6 w-6 text-slate-700" />
+  </div>
 </div>
 
-            </div>
-          </Card>
-        ))}
-      </div>
-    </section>
-  </>
-)}
 
+
+            {/* Title + subtitle */}
+            <div className="mb-2">
+              <h3 className="text-lg font-semibold text-slate-800 group-hover:text-[hsl(var(--brand-primary))] transition-colors">
+                {experience.title}
+              </h3>
+              <p className="text-sm text-slate-600 font-medium">
+                {experience.subtitle}
+              </p>
+            </div>
+
+            {/* Description, tags, button */}
+            <div className="flex-1 flex flex-col justify-between">
+              <p className="text-slate-700 text-sm leading-relaxed mb-4 line-clamp-4">
+                {experience.description}
+              </p>
+
+              <div className="flex flex-wrap gap-1 mb-4">
+                {experience.tags.slice(0, 3).map((tag, tagIndex) => (
+                  <Badge key={tagIndex} variant="outline" className="text-xs">
+                    {tag}
+                  </Badge>
+                ))}
+                {experience.tags.length > 3 && <Badge variant="outline" className="text-xs">...</Badge>}
+              </div>
+
+              {/* ✅ View Details button triggers detail view */}
+              <button
+                onClick={() => handleexperienceClick(experience)}
+                className="mt-auto w-full py-2 px-4 border border-slate-200 rounded-md text-center text-sm text-slate-600 group-hover:bg-[hsl(var(--brand-secondary))] group-hover:border-[hsl(var(--brand-primary))] group-hover:text-[hsl(var(--brand-primary))] transition-colors flex items-center justify-center"
+              >
+                View Details
+                <ExternalLink className="ml-2 h-3 w-3" />
+              </button>
+            </div>
+          </div>
+        </Card>
+      );
+    })}
+  </div>
+</section>
+
+
+
+
+            
 
             {/* Projects Section */}
             <section 
@@ -632,7 +588,7 @@ export default function Home() {
   className="bg-[hsl(var(--brand-anthracite))] text-white shadow hover:shadow-md hover:brightness-90"
   onClick={() => {
     const link = document.createElement('a');
-    link.href = '/Chater_CV_Eng (10).pdf';
+    link.href = '/Chater_CV (6).pdf';
     link.download = 'Oumaima_Chater_Resume.pdf';
     document.body.appendChild(link);
     link.click();

@@ -1,5 +1,5 @@
 
-import {ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, ExternalLink, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, PanelLeft, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow, Car, Leaf, BatteryCharging} from 'lucide-react';
+import {ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, ExternalLink, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, PanelLeft, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow, Car, Leaf, BatteryCharging, Video} from 'lucide-react';
 
 const Icons = {
   arrowRight: ArrowRight,
@@ -32,6 +32,7 @@ const Icons = {
   panelLeft: PanelLeft,
   Car: Car,
   Leaf: Leaf,
+  Video: Video,
   BatteryCharging: BatteryCharging
 };
 
