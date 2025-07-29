@@ -26,7 +26,7 @@ export const experiences: experiencesData[] = [
     description:
       "Designed and deployed scalable AI pipelines and LLM agents that transform diverse content  into structured, multimodal video scripts, powering personalized, automated storytelling across industries.",
       icon: "Video",
-    gradient: "from-[hsl(var(--brand-yellow-pastel))] to-transparent",
+    gradient: "from-[hsl(var(--brand-olive))] to-transparent",
     tags: [
       "Python",
       "Artificial Intelligence",
@@ -74,7 +74,7 @@ export const experiences: experiencesData[] = [
     description:
       "Built and deployed predictive AI systems for quality control and compliance automation at scale, tackling complex manufacturing and procurement challenges in the automotive sector.",
     icon: "Car",
-    gradient: "from-[hsl(var(--brand-coral-pastel))] to-transparent",
+    gradient: "from-[hsl(var(--brand-yellow))] to-transparent",
     tags: [
       "Python",
       "Machine Learning",

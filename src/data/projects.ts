@@ -23,7 +23,7 @@ export interface ProjectData {
       subtitle: "Multi-Agent Coordination for Hazardous Waste Cleanup",
       description: "Simulated autonomous robots tasked with cleaning radioactive waste across multi-zone environments, comparing communication vs non-communication strategies.",
       icon: "Bot",
-      gradient: "from-[hsl(var(--brand-olive))] to-transparent",
+      gradient: "from-[hsl(var(--brand-sand))] to-transparent",
       tags: ["Python", "Multi-Agent Systems", "Simulation", "Communication Protocols"],
       detailedDescription: `This project simulates a hazardous waste cleanup mission using autonomous robots in a zone-based environment with varying radioactivity levels. Robots are restricted by zone, requiring careful multi-agent coordination for waste collection, transformation, and disposal.
     

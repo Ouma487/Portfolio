@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect } from 'react'; 
+import { useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { 
-  ArrowLeft, 
-  ExternalLink, 
+import {
+  ArrowLeft,
+  ExternalLink,
   TrendingUp,
   Brain,
   BarChart3,
@@ -25,15 +25,15 @@ interface ExperienceDetailProps {
 }
 
 const iconMap = {
-  TrendingUp: TrendingUp,
-  BarChart3: BarChart3,
-  Brain: Brain,
-  Bot: Bot,
-  Car: Car,
-  Lightbulb: Lightbulb,
-  Code2: Code2,
-  LineChart: LineChart,
-  Video: Video
+  TrendingUp,
+  BarChart3,
+  Brain,
+  Bot,
+  Car,
+  Lightbulb,
+  Code2,
+  LineChart,
+  Video
 };
 
 export default function ExperienceDetail({ experience, onBack }: ExperienceDetailProps) {
@@ -45,9 +45,9 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
 
   return (
     <div className="w-full">
-      {/* Header */}
+      {/* Sticky Header */}
       <div className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div className="container mx-auto px-3 py-2 sm:px-4 sm:py-3">
+        <div className="container mx-auto px-4 py-2 sm:px-6">
           <div className="flex items-center space-x-2 sm:space-x-3">
             <Button
               variant="ghost"
@@ -61,37 +61,44 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
             <div className="h-4 w-px bg-slate-300 shrink-0" />
             <div className="flex items-center space-x-2 sm:space-x-3 overflow-hidden">
               <div className={`p-1 rounded-lg bg-gradient-to-r ${experience.gradient} bg-opacity-20 shadow-inner shrink-0`}>
-                {IconComponent && <IconComponent className="h-4 w-4 text-slate-700" />}
+                <IconComponent className="h-4 w-4 text-slate-700" />
               </div>
               <div className="overflow-hidden">
-                <h1 className="text-sm font-semibold sm:text-base text-slate-800 truncate">{experience.title}</h1>
-                <p className="text-xs text-slate-600 truncate">{experience.subtitle}</p>
+                <h1 className="text-sm font-semibold sm:text-base text-slate-800 truncate">
+                  {experience.title}
+                </h1>
+                <p className="text-xs text-slate-600 whitespace-normal break-words">
+                  {experience.subtitle}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      {/* Main Container */}
       <div className="container mx-auto px-6 py-8">
         {/* Hero Section */}
-        <Card className="border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-8">
-          <div className={`h-2 bg-gradient-to-r ${experience.gradient}`} />
+        <Card className="border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-10 w-full">
+          <div className={`h-2 bg-gradient-to-r ${experience.gradient} rounded-t-xl`} />
           <CardHeader>
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
               <div className="flex-1">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-r ${experience.gradient} bg-opacity-20 shadow-inner`}>
-                    {IconComponent && <IconComponent className="h-8 w-8 text-slate-700" />}
-                  </div>
-                  <div>
-                    <CardTitle className="text-3xl font-bold text-slate-800">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-3 mb-4 w-full">
+                <div className={`flex-shrink-0 p-3 rounded-lg bg-gradient-to-r ${experience.gradient} bg-opacity-20 shadow-inner w-fit h-fit`}>
+  {IconComponent && <IconComponent className="w-8 h-8 text-slate-700" />}
+</div>
+
+                  <div className="flex-1 min-w-0">
+                    <CardTitle className="text-2xl sm:text-3xl font-bold text-slate-800 leading-tight mb-1">
                       {experience.title}
                     </CardTitle>
-                    <CardDescription className="text-lg text-slate-600">
+                    <CardDescription className="text-base sm:text-lg text-slate-600 leading-snug whitespace-normal break-words">
                       {experience.subtitle}
                     </CardDescription>
                   </div>
                 </div>
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {experience.tags.map((tag, index) => (
                     <Badge key={index} variant="outline" className="text-xs">
@@ -99,7 +106,8 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
                     </Badge>
                   ))}
                 </div>
-                <p className="text-lg text-slate-700 leading-relaxed">
+
+                <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-5xl">
                   {experience.description}
                 </p>
               </div>
@@ -107,17 +115,18 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
           </CardHeader>
         </Card>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Main + Sidebar Grid */}
+        <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
-            <Card className="border-0 shadow-lg">
+          <div className="space-y-8 w-full">
+            <Card className="border-0 shadow-lg w-full">
               <CardHeader>
                 <CardTitle className="text-xl">Experience Overview</CardTitle>
               </CardHeader>
               <CardContent className="space-y-8">
                 <div className="prose prose-slate max-w-none">
                   {experience.detailedDescription.split('\n\n').map((paragraph, index) => (
-                    <p key={index} className="text-slate-700 leading-relaxed mb-4">
+                    <p key={index} className="text-slate-700 leading-relaxed mb-4 text-base lg:text-lg">
                       {paragraph}
                     </p>
                   ))}
@@ -154,7 +163,7 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
                           key={index}
                           src={image}
                           alt={`${experience.title} visual ${index + 1}`}
-                          className="rounded-lg shadow-md w-full max-w-3xl object-contain"
+                          className="rounded-lg shadow-md w-full max-w-[900px] object-contain"
                         />
                       ))}
                     </div>
@@ -165,8 +174,8 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
-            <Card className="border-0 shadow-lg">
+          <div className="space-y-6 w-full">
+            <Card className="border-0 shadow-lg w-full">
               <CardHeader>
                 <CardTitle className="text-lg">Technologies Used</CardTitle>
               </CardHeader>
@@ -182,7 +191,7 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
             </Card>
 
             {(experience.logo || experience.companyDescription || experience.companyWebsite) && (
-              <Card className="border-0 shadow-lg">
+              <Card className="border-0 shadow-lg w-full">
                 <CardHeader>
                   <CardTitle className="text-lg">About the Company</CardTitle>
                 </CardHeader>
