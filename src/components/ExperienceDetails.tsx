@@ -108,13 +108,13 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
         </Card>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Content */}
-          <div className="lg:col-span-2">
+          {/* Main Content */}
+          <div className="lg:col-span-2 space-y-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-xl">Experience Overview</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-8">
                 <div className="prose prose-slate max-w-none">
                   {experience.detailedDescription.split('\n\n').map((paragraph, index) => (
                     <p key={index} className="text-slate-700 leading-relaxed mb-4">
@@ -122,8 +122,31 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
                     </p>
                   ))}
                 </div>
+
+                {experience.keyFeatures?.length > 0 && (
+                  <>
+                    <h3 className="text-lg font-semibold text-slate-700">Key Features</h3>
+                    <ul className="list-disc list-inside space-y-2 text-sm text-slate-600">
+                      {experience.keyFeatures.map((feature, index) => (
+                        <li key={index}>{feature}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {experience.technicalDetails?.length > 0 && (
+                  <>
+                    <h3 className="text-lg font-semibold text-slate-700">Technical Implementation</h3>
+                    <ul className="list-disc list-inside space-y-2 text-sm text-slate-600">
+                      {experience.technicalDetails.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
                 {experience.images && experience.images.length > 0 && (
-                  <div className="mt-6">
+                  <div>
                     <h3 className="text-lg font-semibold text-slate-700 mb-3">Visuals</h3>
                     <div className="flex flex-col items-center space-y-6">
                       {experience.images.map((image, index) => (
@@ -145,19 +168,6 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
           <div className="space-y-6">
             <Card className="border-0 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-lg">Key Features</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc list-inside space-y-2 text-sm text-slate-600">
-                  {experience.keyFeatures.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
                 <CardTitle className="text-lg">Technologies Used</CardTitle>
               </CardHeader>
               <CardContent>
@@ -170,22 +180,6 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
                 </div>
               </CardContent>
             </Card>
-            {experience.technicalDetails?.length > 0 && (
-  <Card className="border-0 shadow-lg">
-    <CardHeader>
-      <CardTitle className="text-lg">Technical Implementation</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <ul className="list-disc list-inside space-y-2 text-sm text-slate-600">
-        {experience.technicalDetails.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </CardContent>
-  </Card>
-)}
-
-
 
             {(experience.logo || experience.companyDescription || experience.companyWebsite) && (
               <Card className="border-0 shadow-lg">
@@ -195,11 +189,10 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
                 <CardContent className="space-y-3 text-sm text-slate-700">
                   {experience.logo && (
                     <img
-                    src={experience.logo}
-                    alt={`${experience.title} logo`}
-                    className="h-16 object-contain"
-                  />
-                  
+                      src={experience.logo}
+                      alt={`${experience.title} logo`}
+                      className="h-16 object-contain"
+                    />
                   )}
                   {experience.companyDescription && <p>{experience.companyDescription}</p>}
                   {experience.companyWebsite && (
