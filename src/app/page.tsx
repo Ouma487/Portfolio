@@ -168,7 +168,7 @@ export default function Home() {
   }
 
   const skills = ['Python', 'MATLAB', 'C++', 'Machine Learning', 'Deep Learning', 'Natural Language Processing',
-    'Computer Vision', 'SQL', 'Reinforcement Learning', 'Large Language Models', 
+    'Computer Vision', 'SQL', 'Reinforcement Learning', 'Statistics','Probabilities','Optimization','Large Language Models', 
     'AI Agents', 'AWS Lambda', 'FastAPI']
    ;
 
@@ -266,12 +266,12 @@ export default function Home() {
               ref={introductionRef}
               id="introduction"
             >
-              <Card className="shadow-2xl hover:shadow-[0_10px_30px_rgba(0,0,0,0.15)] bg-gradient-to-r from-[#fafafa] to-[#fafafa] rounded-xl transition duration-300">
+              <Card className="border border-slate-300 bg-white shadow-md hover:shadow-lg transition-all duration-300 rounded-xl">
+  <CardHeader className="pb-4">
+    <CardTitle className="text-3xl font-bold text-slate-800">
+      About Me
+    </CardTitle>
 
-                <CardHeader className="pb-4">
-                <CardTitle className="text-3xl font-bold bg-gradient-to-r from-[#007A8E] to-[#A4D7E1] bg-clip-text text-transparent">
-                  About Me
-                </CardTitle>
 
                   <CardDescription className="text-lg text-slate-600">
                     Artificial Intelligence Enginneer & Data Scientist
@@ -348,10 +348,11 @@ export default function Home() {
     {experiences.map((experience, index) => {
       const IconComponent = iconMap[experience.icon as keyof typeof iconMap] || Code;
       return (
-        <Card 
-          key={index} 
-          className="h-full flex flex-col justify-between group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden"
-        >
+        <Card
+  key={index}
+  className="h-full flex flex-col justify-between group overflow-hidden border border-slate-300 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl"
+>
+
           <div className={`h-2 bg-gradient-to-r ${experience.gradient}`} />
 
           <div className="flex-1 flex flex-col justify-between p-4">
@@ -430,9 +431,10 @@ export default function Home() {
                   return (
                     <Card 
   key={index} 
-  className="h-full flex flex-col justify-between group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden cursor-pointer"
   onClick={() => handleProjectClick(project)}
+  className="h-full flex flex-col justify-between group overflow-hidden cursor-pointer rounded-xl border border-slate-300 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
 >
+
   <div className={`h-2 bg-gradient-to-r ${project.gradient}`} />
 
   <div className="flex-1 flex flex-col justify-between p-4">
@@ -505,9 +507,10 @@ export default function Home() {
                   return (
                     <Card 
   key={index} 
-  className="h-full flex flex-col justify-between group hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-0 shadow-lg overflow-hidden cursor-pointer"
   onClick={() => handleIndProjectClick(indproject)}
+  className="h-full flex flex-col justify-between group overflow-hidden cursor-pointer rounded-xl border border-slate-300 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
 >
+
   <div className={`h-2 bg-gradient-to-r ${indproject.gradient}`} />
 
   <div className="flex-1 flex flex-col justify-between p-4">
@@ -574,15 +577,16 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-slate-800">Resume & Documents</h2>
               </div>
               
-              <Card className="border-0 shadow-xl">
-                <div className="h-2 bg-gradient-to-r from-[hsl(var(--brand-anthracite))] to-transparent" />
-                <CardHeader>
-                  <CardTitle className="text-xl">Professional Documents</CardTitle>
-                  <CardDescription>
-                    Download my resume and other relevant professional materials.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
+              <Card className="rounded-xl border border-slate-300 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="h-2 bg-gradient-to-r from-[hsl(var(--brand-anthracite))] to-transparent" />
+              <CardHeader>
+                <CardTitle className="text-xl">Professional Documents</CardTitle>
+                <CardDescription>
+                  Download my resume and other relevant professional materials.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Button 
   className="bg-[hsl(var(--brand-anthracite))] text-white shadow hover:shadow-md hover:brightness-90"
