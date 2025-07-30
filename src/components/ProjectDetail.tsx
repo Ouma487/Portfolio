@@ -84,8 +84,9 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
 
       {/* Main Section */}
       <div className="container mx-auto px-6 py-8">
-        <Card className="border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-8">
-          <div className={`h-2 bg-gradient-to-r ${project.gradient}`} />
+      <Card className="mb-8 border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
+          <div className={`h-2 bg-gradient-to-r ${project.gradient} rounded-t-xl`} />
+
           <CardHeader>
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
               <div className="flex-1">
@@ -154,7 +155,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
-            <Card className="border-0 shadow-lg">
+          <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
               <CardHeader>
                 <CardTitle className="text-xl">Project Overview</CardTitle>
               </CardHeader>
@@ -188,7 +189,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
           </div>
 
           <div className="space-y-6">
-            <Card className="border-0 shadow-lg">
+          <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
               <CardHeader>
                 <CardTitle className="text-lg">Key Features</CardTitle>
               </CardHeader>
@@ -201,7 +202,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
               <CardHeader>
                 <CardTitle className="text-lg">Technologies Used</CardTitle>
               </CardHeader>
@@ -216,7 +217,7 @@ export default function ProjectDetail({ project, onBack }: ProjectDetailProps) {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
               <CardHeader>
                 <CardTitle className="text-lg">Quick Actions</CardTitle>
               </CardHeader>

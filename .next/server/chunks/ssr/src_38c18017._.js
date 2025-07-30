@@ -419,10 +419,10 @@ function ProjectDetail({ project, onBack }) {
                 className: "container mx-auto px-6 py-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                        className: "border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-8",
+                        className: "mb-8 border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `h-2 bg-gradient-to-r ${project.gradient}`
+                                className: `h-2 bg-gradient-to-r ${project.gradient} rounded-t-xl`
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProjectDetail.tsx",
                                 lineNumber: 88,
@@ -444,12 +444,12 @@ function ProjectDetail({ project, onBack }) {
                                                                 className: "w-8 h-8 text-slate-700"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                lineNumber: 94,
+                                                                lineNumber: 95,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 93,
+                                                            lineNumber: 94,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -460,7 +460,7 @@ function ProjectDetail({ project, onBack }) {
                                                                     children: project.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                    lineNumber: 98,
+                                                                    lineNumber: 99,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -468,19 +468,19 @@ function ProjectDetail({ project, onBack }) {
                                                                     children: project.subtitle
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                    lineNumber: 101,
+                                                                    lineNumber: 102,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 97,
+                                                            lineNumber: 98,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 92,
+                                                    lineNumber: 93,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -491,12 +491,12 @@ function ProjectDetail({ project, onBack }) {
                                                             children: tag
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 110,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 108,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -504,13 +504,13 @@ function ProjectDetail({ project, onBack }) {
                                                     children: project.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 116,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -524,14 +524,14 @@ function ProjectDetail({ project, onBack }) {
                                                             className: "mr-2 h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 126,
+                                                            lineNumber: 127,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Download Report"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 123,
                                                     columnNumber: 19
                                                 }, this),
                                                 project.codeRepo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -543,14 +543,14 @@ function ProjectDetail({ project, onBack }) {
                                                             className: "mr-2 h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 136,
+                                                            lineNumber: 137,
                                                             columnNumber: 21
                                                         }, this),
                                                         "View Code"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 132,
                                                     columnNumber: 19
                                                 }, this),
                                                 project.liveDemo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -562,38 +562,38 @@ function ProjectDetail({ project, onBack }) {
                                                             className: "mr-2 h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 146,
+                                                            lineNumber: 147,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Live Demo"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 142,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                lineNumber: 89,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ProjectDetail.tsx",
                         lineNumber: 87,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 lg:grid-cols-3 gap-8",
@@ -601,7 +601,7 @@ function ProjectDetail({ project, onBack }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "lg:col-span-2",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                    className: "border-0 shadow-lg",
+                                    className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -609,12 +609,12 @@ function ProjectDetail({ project, onBack }) {
                                                 children: "Project Overview"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 160,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 159,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -626,12 +626,12 @@ function ProjectDetail({ project, onBack }) {
                                                             children: paragraph
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 164,
+                                                            lineNumber: 165,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 162,
+                                                    lineNumber: 163,
                                                     columnNumber: 17
                                                 }, this),
                                                 project.images && project.images.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -642,7 +642,7 @@ function ProjectDetail({ project, onBack }) {
                                                             children: "Visuals"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 172,
+                                                            lineNumber: 173,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -654,42 +654,42 @@ function ProjectDetail({ project, onBack }) {
                                                                     className: "rounded-lg shadow-md w-full max-w-3xl object-contain"
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                    lineNumber: 175,
+                                                                    lineNumber: 176,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 173,
+                                                            lineNumber: 174,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 172,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                    lineNumber: 157,
-                                    columnNumber: 13
+                                    lineNumber: 158,
+                                    columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                lineNumber: 156,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -697,12 +697,12 @@ function ProjectDetail({ project, onBack }) {
                                                     children: "Key Features"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 193,
+                                                    lineNumber: 194,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 193,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -712,27 +712,27 @@ function ProjectDetail({ project, onBack }) {
                                                             children: feature
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 198,
+                                                            lineNumber: 199,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 197,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 196,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                        lineNumber: 191,
-                                        columnNumber: 13
+                                        lineNumber: 192,
+                                        columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -740,12 +740,12 @@ function ProjectDetail({ project, onBack }) {
                                                     children: "Technologies Used"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 206,
+                                                    lineNumber: 207,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 205,
+                                                lineNumber: 206,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -757,27 +757,27 @@ function ProjectDetail({ project, onBack }) {
                                                             children: tag
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                            lineNumber: 211,
+                                                            lineNumber: 212,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 209,
+                                                    lineNumber: 210,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 208,
+                                                lineNumber: 209,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 205,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -785,12 +785,12 @@ function ProjectDetail({ project, onBack }) {
                                                     children: "Quick Actions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                    lineNumber: 221,
+                                                    lineNumber: 222,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 221,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -805,14 +805,14 @@ function ProjectDetail({ project, onBack }) {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                lineNumber: 230,
+                                                                lineNumber: 231,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Read Full Report"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                        lineNumber: 225,
+                                                        lineNumber: 226,
                                                         columnNumber: 19
                                                     }, this),
                                                     project.codeRepo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -824,14 +824,14 @@ function ProjectDetail({ project, onBack }) {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                lineNumber: 240,
+                                                                lineNumber: 241,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Source Code"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                        lineNumber: 235,
+                                                        lineNumber: 236,
                                                         columnNumber: 19
                                                     }, this),
                                                     project.liveDemo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -843,38 +843,38 @@ function ProjectDetail({ project, onBack }) {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                                lineNumber: 250,
+                                                                lineNumber: 251,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Live Demo"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                        lineNumber: 245,
+                                                        lineNumber: 246,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                                lineNumber: 223,
+                                                lineNumber: 224,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                                        lineNumber: 219,
+                                        lineNumber: 220,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ProjectDetail.tsx",
-                                lineNumber: 190,
+                                lineNumber: 191,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ProjectDetail.tsx",
-                        lineNumber: 155,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1049,10 +1049,10 @@ function IndProjectDetail({ indproject, onBack }) {
                 className: "container mx-auto px-6 py-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                        className: "border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-8",
+                        className: "mb-8 border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `h-2 bg-gradient-to-r ${indproject.gradient}`
+                                className: `h-2 bg-gradient-to-r ${indproject.gradient} rounded-t-xl`
                             }, void 0, false, {
                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
                                 lineNumber: 90,
@@ -1074,12 +1074,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                 className: "w-8 h-8 text-slate-700"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                lineNumber: 96,
+                                                                lineNumber: 97,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 95,
+                                                            lineNumber: 96,
                                                             columnNumber: 17
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,7 +1090,7 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                     children: indproject.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                    lineNumber: 101,
+                                                                    lineNumber: 102,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -1098,19 +1098,19 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                     children: indproject.subtitle
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                    lineNumber: 104,
+                                                                    lineNumber: 105,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 100,
+                                                            lineNumber: 101,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 94,
+                                                    lineNumber: 95,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1121,12 +1121,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             children: tag
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 112,
+                                                            lineNumber: 113,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 111,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1134,13 +1134,13 @@ function IndProjectDetail({ indproject, onBack }) {
                                                     children: indproject.description
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 118,
+                                                    lineNumber: 119,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                            lineNumber: 93,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1154,14 +1154,14 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             className: "mr-2 h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 129,
+                                                            lineNumber: 130,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Download Report"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 19
                                                 }, this),
                                                 indproject.codeRepo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1173,38 +1173,38 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             className: "mr-2 h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 139,
+                                                            lineNumber: 140,
                                                             columnNumber: 21
                                                         }, this),
                                                         "View Code"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 134,
+                                                    lineNumber: 135,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                lineNumber: 91,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/IndProjectDetails.tsx",
                         lineNumber: 89,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 lg:grid-cols-3 gap-8",
@@ -1212,7 +1212,7 @@ function IndProjectDetail({ indproject, onBack }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "lg:col-span-2",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                    className: "border-0 shadow-lg",
+                                    className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1220,12 +1220,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                 children: "Project Overview"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 153,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                            lineNumber: 151,
+                                            lineNumber: 152,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1237,12 +1237,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             children: paragraph
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 158,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 156,
                                                     columnNumber: 17
                                                 }, this),
                                                 indproject.images && indproject.images.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1253,7 +1253,7 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             children: "Visuals"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 165,
+                                                            lineNumber: 166,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1265,42 +1265,42 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                     className: "rounded-lg shadow-md w-full max-w-3xl object-contain"
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                    lineNumber: 168,
+                                                                    lineNumber: 169,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 166,
+                                                            lineNumber: 167,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 164,
+                                                    lineNumber: 165,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 155,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                    lineNumber: 150,
-                                    columnNumber: 13
+                                    lineNumber: 151,
+                                    columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                lineNumber: 149,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1308,12 +1308,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                     children: "Key Features"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 185,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1323,27 +1323,27 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             children: feature
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 191,
+                                                            lineNumber: 192,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 190,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 188,
+                                                lineNumber: 189,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                        lineNumber: 184,
-                                        columnNumber: 13
+                                        lineNumber: 185,
+                                        columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1351,12 +1351,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                     children: "Technologies Used"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 199,
+                                                    lineNumber: 200,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 198,
+                                                lineNumber: 199,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1368,27 +1368,27 @@ function IndProjectDetail({ indproject, onBack }) {
                                                             children: tag
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                            lineNumber: 204,
+                                                            lineNumber: 205,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 202,
+                                                    lineNumber: 203,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 202,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                        lineNumber: 197,
+                                        lineNumber: 198,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1396,12 +1396,12 @@ function IndProjectDetail({ indproject, onBack }) {
                                                     children: "Quick Actions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                    lineNumber: 214,
+                                                    lineNumber: 215,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 213,
+                                                lineNumber: 214,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1416,14 +1416,14 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                lineNumber: 223,
+                                                                lineNumber: 224,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Read Full Report"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                        lineNumber: 218,
+                                                        lineNumber: 219,
                                                         columnNumber: 19
                                                     }, this),
                                                     indproject.codeRepo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1435,38 +1435,38 @@ function IndProjectDetail({ indproject, onBack }) {
                                                                 className: "mr-2 h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                                lineNumber: 233,
+                                                                lineNumber: 234,
                                                                 columnNumber: 21
                                                             }, this),
                                                             "Source Code"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                        lineNumber: 228,
+                                                        lineNumber: 229,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                                lineNumber: 216,
+                                                lineNumber: 217,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 213,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/IndProjectDetails.tsx",
-                                lineNumber: 183,
+                                lineNumber: 184,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/IndProjectDetails.tsx",
-                        lineNumber: 148,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1793,13 +1793,13 @@ function ExperienceDetail({ experience, onBack }) {
                 className: "container mx-auto px-6 py-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                        className: "border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-10 w-full",
+                        className: "mb-8 border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `h-2 bg-gradient-to-r ${experience.gradient} rounded-t-xl`
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                lineNumber: 83,
+                                lineNumber: 85,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -1817,12 +1817,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                             className: "w-8 h-8 text-slate-700"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 89,
+                                                            lineNumber: 91,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 90,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1833,7 +1833,7 @@ function ExperienceDetail({ experience, onBack }) {
                                                                 children: experience.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                lineNumber: 93,
+                                                                lineNumber: 95,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
@@ -1841,19 +1841,19 @@ function ExperienceDetail({ experience, onBack }) {
                                                                 children: experience.subtitle
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                lineNumber: 96,
+                                                                lineNumber: 98,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 94,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 87,
+                                                lineNumber: 89,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1864,12 +1864,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                         children: tag
                                                     }, index, false, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 106,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 104,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1877,23 +1877,23 @@ function ExperienceDetail({ experience, onBack }) {
                                                 children: experience.description
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 110,
+                                                lineNumber: 112,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 87,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                lineNumber: 84,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1908,7 +1908,7 @@ function ExperienceDetail({ experience, onBack }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-8 w-full",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                    className: "border-0 shadow-lg w-full",
+                                    className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -1916,12 +1916,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                 children: "Experience Overview"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 124,
+                                                lineNumber: 127,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 126,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1934,12 +1934,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                             children: paragraph
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 129,
+                                                            lineNumber: 132,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 130,
                                                     columnNumber: 17
                                                 }, this),
                                                 experience.keyFeatures?.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1949,7 +1949,7 @@ function ExperienceDetail({ experience, onBack }) {
                                                             children: "Key Features"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 140,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1958,12 +1958,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                                     children: feature
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                    lineNumber: 140,
+                                                                    lineNumber: 143,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 138,
+                                                            lineNumber: 141,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
@@ -1975,7 +1975,7 @@ function ExperienceDetail({ experience, onBack }) {
                                                             children: "Technical Implementation"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 151,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1984,12 +1984,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                                     children: item
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                    lineNumber: 151,
+                                                                    lineNumber: 154,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 152,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
@@ -2001,7 +2001,7 @@ function ExperienceDetail({ experience, onBack }) {
                                                             children: "Visuals"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 159,
+                                                            lineNumber: 162,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2012,42 +2012,42 @@ function ExperienceDetail({ experience, onBack }) {
                                                                     className: "rounded-lg shadow-md w-full max-w-[900px] object-contain"
                                                                 }, index, false, {
                                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                    lineNumber: 162,
+                                                                    lineNumber: 165,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 160,
+                                                            lineNumber: 163,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 161,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                            lineNumber: 126,
+                                            lineNumber: 129,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                    lineNumber: 122,
-                                    columnNumber: 13
+                                    lineNumber: 124,
+                                    columnNumber: 11
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                lineNumber: 121,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-6 w-full",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg w-full",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -2055,12 +2055,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                     children: "Technologies Used"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 184,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 183,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2072,27 +2072,27 @@ function ExperienceDetail({ experience, onBack }) {
                                                             children: tag
                                                         }, index, false, {
                                                             fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                            lineNumber: 185,
+                                                            lineNumber: 189,
                                                             columnNumber: 21
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                        lineNumber: 178,
-                                        columnNumber: 13
+                                        lineNumber: 181,
+                                        columnNumber: 11
                                     }, this),
                                     (experience.logo || experience.companyDescription || experience.companyWebsite) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-0 shadow-lg w-full",
+                                        className: "border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
@@ -2100,12 +2100,12 @@ function ExperienceDetail({ experience, onBack }) {
                                                     children: "About the Company"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 201,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 200,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2117,14 +2117,14 @@ function ExperienceDetail({ experience, onBack }) {
                                                         className: "h-16 object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 200,
+                                                        lineNumber: 205,
                                                         columnNumber: 21
                                                     }, this),
                                                     experience.companyDescription && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         children: experience.companyDescription
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 206,
+                                                        lineNumber: 211,
                                                         columnNumber: 53
                                                     }, this),
                                                     experience.companyWebsite && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2137,44 +2137,44 @@ function ExperienceDetail({ experience, onBack }) {
                                                                 className: "h-4 w-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                lineNumber: 214,
+                                                                lineNumber: 219,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: "Visit Company Website"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                                lineNumber: 215,
+                                                                lineNumber: 220,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                        lineNumber: 208,
+                                                        lineNumber: 213,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                                lineNumber: 198,
+                                                lineNumber: 203,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 198,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/ExperienceDetails.tsx",
-                                lineNumber: 177,
+                                lineNumber: 180,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ExperienceDetails.tsx",
-                        lineNumber: 119,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this)
                 ]

@@ -79,7 +79,9 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
       {/* Main Container */}
       <div className="container mx-auto px-6 py-8">
         {/* Hero Section */}
-        <Card className="border-0 shadow-xl bg-gradient-to-r from-white to-blue-50/50 overflow-hidden mb-10 w-full">
+        <Card className="mb-8 border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
+
+
           <div className={`h-2 bg-gradient-to-r ${experience.gradient} rounded-t-xl`} />
           <CardHeader>
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
@@ -119,7 +121,8 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
         <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
           {/* Main Content */}
           <div className="space-y-8 w-full">
-            <Card className="border-0 shadow-lg w-full">
+          <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
+
               <CardHeader>
                 <CardTitle className="text-xl">Experience Overview</CardTitle>
               </CardHeader>
@@ -175,7 +178,8 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
 
           {/* Sidebar */}
           <div className="space-y-6 w-full">
-            <Card className="border-0 shadow-lg w-full">
+          <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
+
               <CardHeader>
                 <CardTitle className="text-lg">Technologies Used</CardTitle>
               </CardHeader>
@@ -191,7 +195,8 @@ export default function ExperienceDetail({ experience, onBack }: ExperienceDetai
             </Card>
 
             {(experience.logo || experience.companyDescription || experience.companyWebsite) && (
-              <Card className="border-0 shadow-lg w-full">
+              <Card className="border border-slate-300 shadow-md hover:shadow-lg transition-all duration-300 rounded-xl w-full">
+
                 <CardHeader>
                   <CardTitle className="text-lg">About the Company</CardTitle>
                 </CardHeader>
