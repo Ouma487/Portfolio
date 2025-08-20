@@ -547,10 +547,6 @@ body {
   margin-bottom: .25rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -1191,10 +1187,6 @@ body {
   border-width: 1px;
 }
 
-.border-0 {
-  border-width: 0;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -1477,12 +1469,6 @@ body {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-white {
-  --tw-gradient-from: #fff var(--tw-gradient-from-position);
-  --tw-gradient-to: #fff0 var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .via-white {
   --tw-gradient-to: #fff0 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1498,10 +1484,6 @@ body {
 
 .to-\[hsl\(var\(--sidebar-primary-foreground\)\)\] {
   --tw-gradient-to: hsl(var(--sidebar-primary-foreground)) var(--tw-gradient-to-position);
-}
-
-.to-blue-50\/50 {
-  --tw-gradient-to: #eff6ff80 var(--tw-gradient-to-position);
 }
 
 .to-transparent {
